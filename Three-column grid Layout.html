@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Responsive Assignment 2 </title>
+	<style>
+		body{
+			font-size:16px;
+			background:#F1F0D1;
+			font-family:Arial,Verdana;
+			overflow:auto;
+			
+		}
+		h1,h2,h3,h4{
+		margin-left:2%;
+		color:green;
+		
+		}
+		p{
+		margin-left:2%;
+		
+		}
+		
+		img{
+			max-width:100%;
+			text-align:center;
+			width:auto;
+			height:auto;
+		}
+		
+		.wrapper{
+			background:white;
+			width:98%;
+			margin:0 auto;
+			
+			border:2px solid green;
+			border-radius:5px;
+			box-shadow:0px 0px 10px 4px black;
+			max-width:1200px;
+		}
+		header{
+				width:100%;
+		height:auto;
+		background:#878E63;
+		overflow:hidden;
+		}
+		.callus p{
+			float:right;
+			padding:0.5px 5px 0 0;
+			font-weight:bold;
+			font-size:13px;
+		}
+		
+		nav ul{
+			list-style:none;
+		
+			height:auto;
+			margin:12px auto;
+			padding-bottom:10px;
+			padding-right:20px;
+			border-bottom: 1px solid grey;		
+		}
+		nav ul li{
+			display:inline;
+			padding:3%;
+			width:15%;
+			font-size:15px;
+			font-weight:bold;
+		}
+		
+		.clearfix{
+		clear:both;
+		}
+		.section{
+			width:30%;
+			float:left;
+			margin:1% 1%;
+				font-size:14px;
+		}
+		#secimg1{
+			width:500px;
+			height:250px;
+			border:1px solid green;
+			margin-left:2%;
+			margin-top:1%;
+		
+		}
+		
+		#innerimg{
+			width:200px;
+			height:150px;
+			border:1px solid green;
+			margin-left:2%;
+			margin-right:10px;
+			margin-top:1%;
+			float:left;
+		}
+		#para{
+			text-indent:5px;
+			margin-right:10px;
+		}
+		
+		.section h3,.section h2{
+		text-align:center;
+		}
+		
+		#sec2img{
+			width:80px;
+			height:90px;
+			border:1px solid black;
+			float:left;
+			margin-right:10px;
+			margin-bottom:15px;
+		
+		}
+		#secpara2{
+		text-indent:5px;
+		padding-top:15px;
+		}
+		
+		#nav li{
+			font-weight:bold;	
+		}
+		#secimg{
+			width:350px;
+			height:200px;
+		}
+		
+	/*--------------------------------------------------MEDIA QUERIES STARTS FROM HERE!!!!----------------------------------*/
+	
+	@media screen and(max-width:478px){
+		body{
+			font-size:13px;
+		}
+	}
+	
+	@media screen and (max-width:740px){
+		nav {
+			width:100%;
+			margin-bottom:10px;
+		}
+		nav ul{
+			list-style:none;
+			margin:0 auto;
+			
+			padding-left:0;
+			border-bottom: 0px solid grey;		
+			
+		}
+		
+		nav ul li{
+			display:block;
+			width:100%;
+			text-align:center;
+			margin:0 auto;
+			border-top: 1px solid #878E63;
+			border-right: 0px solid #878E63;
+			border-left: 0px solid #878E63;
+			border-bottom: 1px solid #878E63;
+		}
+		
+		.section{
+			width:100%;
+			margin:0;
+			
+		}
+		#secimg1{
+			width:100%;
+			margin:0;
+		}
+		.section h3, .section h2{
+		text-align:left;
+		}
+		#secimg{
+			width:100%;
+			margin:0;
+		}
+		#sec2img{
+			margin-left:2%
+		}
+	
+	}
+		
+		
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="callus">
+				<p>Call us at <b>+91-9986498439</b></p>
+			</div>
+		</header>
+		<div class="navbar">
+			<nav>
+				<ul>
+					<li>VIDEOS</li>
+					<li>SERVICES</li>
+					<li>BLOG</li>
+					<li>BUSINESS</li>
+					<li>CONTACTS</li>
+				</ul>
+				
+				
+			<nav>
+		</div>
+		
+		<div class="section">
+			<img id="secimg1" src="Lighthouse.jpg" alt="LightHouse"/>
+			<h1>The Blog Post Lorem ipsum dolor sit amet</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Quisque venenatis nunc vitae libero iaculis elementum.
+		Nullam et justodapibus blandit nec et leo. 
+		Ut ut malesuada tellus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Quisque venenatis nunc vitae libero iaculis elementum.
+		Nullam et justodapibus blandit nec et leo. 
+		Ut ut malesuada tellus.</p><hr></hr>
+			<img id="innerimg" src="Chrysanthemum.jpg" alt="LightHouse"/>
+			<p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Quisque venenatis nunc vitae libero iaculis elementum.
+		Nullam et justodapibus blandit nec et leo. 
+		Ut ut malesuada tellus</p>
+		
+		</div>
+		
+		<div class="section">
+			<h3 id="head">RECENT NEWS</h3>
+			<img id="secimg" src="Jellyfish.jpg" alt="Image for Recent NEws"/>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Quisque venenatis nunc vitae </p>
+			<hr></hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Quisque venenatis nunc vitae </p>
+			<hr></hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+		</div>
+		<div class="section">
+			<h2>Beginning Of World</h2>
+			<h1>This is the news for world</h1>
+			<img id="sec2img" src="images.jpg" alt="images"/>
+			<p id="secpara2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		Quisque venenatis nunc vitae"</p><br><br>
+		<div id="nav">
+			<ul>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+				<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+				<li>Lorem ipsum dolor sit amet, consectetur </li>
+			</ul>
+			</div>
+			<img id="imgjelly" src="Jellyfish.jpg" title="Image"/>
+		</div>
+	<div class="clearfix"></div>
+	
+	</div>
+
+</body>
+</html>
